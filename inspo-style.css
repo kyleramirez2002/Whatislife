@@ -1,0 +1,138 @@
+/*<!--Date Started: Dec 5, 2024-->
+<!--Date Finished: Dec 8, 2024-->
+<!--Programmer: Kent Dominic Talamo-->*/
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #0e0e0e, #1a1a1a);
+    color: #fff;
+    overflow-x: hidden;
+}
+button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(90deg, #1b1b1a, #1a1919);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  button:hover {
+    background: linear-gradient(90deg, #170436, #aa47d8);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
+  button:active {
+    transform: translateY(1px);
+  }
+
+/* Header styling */
+header {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(96, 106, 248, 0.596);
+    margin-top: 30px;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    margin: 40px auto;
+    max-width: 1200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+h1, h2 {
+    font-size: 48px;
+    color: #8614b3;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(96, 106, 248, 0.596);
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ddd;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.inspiration-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.inspiration-content div {
+    flex: 1 1 300px;
+    background: rgba(138, 32, 224, 0.137);
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.inspiration-content div:hover {
+    transform: scale(1.05);
+    background: rgba(138, 32, 224, 0.137);
+   
+}
+
+.inspiration-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    filter: grayscale(50%) contrast(130%);
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.inspiration-content img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%) contrast(100%);
+}
+
+footer {
+    background-color: #0e0e0e;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    section {
+        padding: 40px 10px;
+    }
+
+    .inspiration-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}

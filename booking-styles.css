@@ -1,0 +1,137 @@
+/*<!--Date Started: Dec 10, 2024-->
+<!--Date Finished: Dec 11, 2024-->
+<!--Programmer: Kyle Matthew Ramirez-->*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #dfdfdf;
+}
+
+.signup-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 480px; /* Increase width for larger input fields */
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-header header {
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], textarea {
+    width: 100%;
+    font-size: 18px; /* Increased font size */
+    padding: 18px 25px; /* Increased padding for a larger input area */
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Specific height for textarea */
+textarea {
+    width: 100%;
+    height: 300px;  /* Increased height for a larger textarea */
+    font-size: 18px; /* Increased font size */
+    padding: 20px;   /* Increased padding for more space inside the textarea */
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Placeholder text styling */
+textarea::placeholder {
+    color: #999;
+}
+
+/* Remove default styles for input[type="date"] */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="date"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Focus effect */
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="date"]:focus, textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0px 0px 8px rgba(76, 175, 80, 0.5);
+}
+
+/* Placeholder text styling */
+::placeholder {
+    color: #999;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 55px; /* Increased button height */
+    background: #222;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 18px; /* Increased button text size */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #000;
+    transform: scale(1.05);
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.sign-up-link {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.sign-up-link a {
+    color: #000;
+    font-weight: 600;
+}

@@ -1,0 +1,200 @@
+/*<!--Date Started: Dec 10, 2024-->
+<!--Date Finished: Dec 12, 2024-->
+<!--Programmer: Kyle Matthew Ramirez-->*/
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #0e0e0e, #1a1a1a);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 30px;
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bt1 {
+  padding: 10px;
+  border-radius: 30px;
+}
+
+/* Container for the search results */
+.results {
+  margin-top: 20px;
+  border-radius: 30px;
+  width: 43%; /* Match the width of the input field */
+  margin-left: auto; /* Center align */
+  margin-right: auto; /* Center align */
+}
+
+/* Individual search result styling */
+.result {
+  background-color: #fff;
+  font-size: 22px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensure results take the full width of the container */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Link inside each search result */
+.result a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block; /* Make the link a block element to ensure it takes up full width */
+}
+
+/* Hover effect for links */
+.result a:hover {
+  color: #4CAF50;
+}
+
+button {
+  display: block; /* Makes the button a block element */
+  margin: 10px auto; /* Centers the button horizontally and adds vertical spacing */
+  background: linear-gradient(90deg, #1b1b1a, #1a1919);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+  background: linear-gradient(90deg, #170436, #aa47d8);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+
+/* Active state */
+button:active {
+  transform: translateY(1px);
+}
+
+/* Header styling */
+header {
+  background-color: transparent;
+  padding: 20px;
+  text-align: center;
+  font-size: 42px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px rgba(96, 106, 248, 0.596);
+  margin-top: 30px;
+}
+
+/* Section Styling */
+section {
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  margin: 40px auto;
+  max-width: 1200px;
+  transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+  transform: scale(1.02);
+}
+
+h1, h2 {
+  font-size: 48px;
+  color: #04fc9d;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  letter-spacing: 3px;
+  text-shadow: 0 0 15px rgba(96, 106, 248, 0.596);
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #ddd;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.inspiration-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.inspiration-content div {
+  flex: 1 1 300px;
+  background: rgba(18, 109, 128, 0.137);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.inspiration-content div:hover {
+  transform: scale(1.05);
+  background: rgba(138, 32, 224, 0.137);
+ 
+}
+
+.inspiration-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  filter: grayscale(50%) contrast(130%);
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.inspiration-content img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%) contrast(100%);
+}
+
+footer {
+  background-color: #0e0e0e;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  section {
+      padding: 40px 10px;
+  }
+
+  .inspiration-content {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+.footer {
+  background-color: #0e0e0e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+}

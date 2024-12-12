@@ -1,0 +1,216 @@
+<!--Date Started: Nov 29, 2024-->
+<!--Date Finished: Dec 11, 2024-->
+<!--Programmer: Kyle Matthew Ramirez Clifford Miao Kent Dominic Talamo-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Foody - Taste the Magic of Anime!</title>
+  <link rel="stylesheet" href="ProjectFinal-styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="#home"><img src="loffy.png" alt="Foody Logo" class="logo"></a>
+        <span class="brand-name">Monkey D. Foody</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown">
+          <a href="#">About</a>
+          <div class="dropdown-content">
+            <a href="team.html">Our Team</a>
+            <a href="History.html">Our History</a>
+            <a href="Mission.html">Our Mission</a>
+            <a href="inspo.html">Our Inspiration</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Services</a>
+          <div class="dropdown-content">
+            <a href="catering.html">Catering</a>
+            <a href="Events.html">Events</a>
+          </div>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="Recipes.html">Recipes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Search Bar -->
+    <section class="search-bar">
+      <input type="text" id="dishSearch" placeholder="Search for a dish...">
+      <button onclick="searchDish()">Search</button>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <h1>Join the Feast of Flavor! <br> Taste the Magic of Anime-Inspired Meals!</h1>
+      <p>Your taste adventure begins with ramen, sushi, and bento from your favorite anime world.</p>
+      <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZm9jdWoxMGY5dGVjMG55Z3kzZXJsam91OHdpOGJxMW8zMjM1M24wcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Lo6BKNnNjKFy4A0Gc8/giphy.gif" alt="Anime Food" class="hero-image">
+    </section>
+
+    <!-- Menu Section with 40 Anime-Inspired Dishes -->
+    <section class="menu">
+      <h2>Our Anime-Inspired Menu</h2>
+      <div class="menu-items">
+        <!-- Dish 1 to Dish 20 -->
+        <!-- Dish 1 to Dish 20 are already listed, so we just add more dishes below -->
+
+<div class="menu-item" id="tempura">
+  <img src="tempura.jpg" alt="Tempura" class="menu-img">
+  <h3>Tempura - From My Hero Academia</h3>
+  <p>Crispy battered shrimp and vegetables with a delicate dipping sauce.</p>
+  <p class="price">₱220</p>
+  <button class="order-btn" onclick="orderDish('Tempura', 220)">Order</button>
+  <button class="cart-btn">Add to Cart</button>
+</div>
+
+<div class="menu-item" id="ramen">
+  <img src="ramen.jpg" alt="Ramen" class="menu-img">
+  <h3>Ramen - From Naruto</h3>
+  <p>Hot noodle soup with tender pork slices, egg, and fresh vegetables.</p>
+  <p class="price">₱350</p>
+  <button class="order-btn" onclick="orderDish('Ramen', 350)">Order</button>
+  <button class="cart-btn">Add to Cart</button>
+</div>
+
+<div class="menu-item" id="sushi">
+  <img src="sushi.jpg" alt="Sushi" class="menu-img">
+  <h3>Sushi - From One Piece</h3>
+  <p>Fresh fish slices on top of perfectly seasoned rice.</p>
+  <p class="price">₱200</p>
+  <button class="order-btn" onclick="orderDish('Sushi', 200)">Order</button>
+  <button class="cart-btn">Add to Cart</button>
+</div>
+
+<div class="menu-item" id="bento">
+  <img src="bento.jpg" alt="Bento" class="menu-img">
+  <h3>Bento - Spirited Away Inspired</h3>
+  <p>A delicious box filled with rice, grilled meats, pickled vegetables, and a side of miso soup.</p>
+  <p class="price">₱300</p>
+  <button class="order-btn" onclick="orderDish('Bento', 300)">Order</button>
+  <button class="cart-btn">Add to Cart</button>
+</div>
+
+<div class="menu-item" id="takoyaki">
+  <img src="takoyaki.jpg" alt="Takoyaki" class="menu-img">
+  <h3>Takoyaki - From Food Wars!</h3>
+  <p>Octopus-filled dough balls with savory sauce and bonito flakes.</p>
+  <p class="price">₱150</p>
+  <button class="order-btn" onclick="orderDish('Takoyaki', 150)">Order</button>
+  <button class="cart-btn">Add to Cart</button>
+</div>
+
+<div class="menu-item" id="gyoza">
+  <img src="gyoza.jpg" alt="Gyoza" class="menu-img">
+  <h3>Gyoza - From Naruto</h3>
+  <p>Pan-fried dumplings filled with pork and vegetables.</p>
+  <p class="price">₱180</p>
+  <button class="order-btn" onclick="orderDish('Gyoza', 180)">Order</button>
+  <button class="cart-btn">Add to Cart</button>
+</div>
+
+<div class="menu-item" id="onigiri">
+  <img src="onigiri.jpg" alt="Onigiri" class="menu-img">
+  <h3>Onigiri - From Attack on Titan</h3>
+  <p>Rice balls filled with delicious salmon, wrapped in seaweed.</p>
+  <p class="price">₱120</p>
+  <button class="order-btn" onclick="orderDish('Onigiri', 120)">Order</button>
+  <button class="cart-btn">Add to Cart</button>
+</div>
+
+<div class="menu-item" id="unagi">
+  <img src="unagi.jpg" alt="Unagi" class="menu-img">
+  <h3>Unagi - From Demon Slayer</h3>
+  <p>Grilled eel glazed with a sweet and savory sauce.</p>
+  <p class="price">₱250</p>
+  <button class="order-btn" onclick="orderDish('Unagi', 250)">Order</button>
+  <button class="cart-btn">Add to Cart</button>
+</div>
+
+<div class="menu-item" id="shabu">
+  <img src="shabu.jpg" alt="Shabu Shabu" class="menu-img">
+  <h3>Shabu Shabu - From Your Name</h3>
+  <p>Thinly sliced beef cooked in hot broth, served with vegetables.</p>
+  <p class="price">₱400</p>
+  <button class="order-btn" onclick="orderDish('Shabu Shabu', 400)">Order</button>
+  <button class="cart-btn">Add to Cart</button>
+</div>
+
+<div class="menu-item" id="chirashi">
+  <img src="chirashi.jpg" alt="Chirashi" class="menu-img">
+  <h3>Chirashi - From Cowboy Bebop</h3>
+  <p>Sashimi-style fish served over a bowl of sushi rice.</p>
+  <p class="price">₱350</p>
+  <button class="order-btn" onclick="orderDish('Chirashi', 350)">Order</button>
+  <button class="cart-btn">Add to Cart</button>
+</div>
+
+<div class="menu-item" id="katsu">
+  <img src="katsu.jpg" alt="Katsu" class="menu-img">
+  <h3>Chicken Katsu - From Food Wars!</h3>
+  <p>Fried breaded chicken cutlet with a tangy sauce.</p>
+  <p class="price">₱270</p>
+  <button class="order-btn" onclick="orderDish('Chicken Katsu', 270)">Order</button>
+  <button class="cart-btn">Add to Cart</button>
+</div>
+
+<div class="menu-item" id="tonkatsu">
+  <img src="tonkatsu.jpg" alt="Tonkatsu" class="menu-img">
+  <h3>Tonkatsu - From Demon Slayer</h3>
+  <p>Crispy pork cutlet served with cabbage and rice.</p>
+  <p class="price">₱300</p>
+  <button class="order-btn" onclick="orderDish('Chicken Katsu', 270)">Order</button>
+  <button class="cart-btn">Add to Cart</button>
+</div>
+
+
+        <!-- Dish 23 to Dish 40 -->
+        <!-- Continue similarly for the remaining 18 dishes... -->
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Monkey D. Foody. All rights reserved. Inspired by the greatest anime feasts!</p>
+  </footer>
+
+  <script>
+    // JavaScript function to handle search functionality
+    function searchDish() {
+      const searchQuery = document.getElementById('dishSearch').value.toLowerCase();
+      const dish = document.getElementById(searchQuery);
+
+      if (dish) {
+        dish.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+        alert('Dish not found!');
+      }
+    }
+
+    // Function to order a dish
+    function orderDish(dishName, price) {
+      const quantity = prompt(`How many ${dishName} would you like to order?`);
+      if (quantity && !isNaN(quantity)) {
+        const totalPrice = price * quantity;
+        alert(`You have ordered ${quantity} ${dishName}(s). Total: ₱${totalPrice}`);
+      } else {
+        alert('Invalid quantity!');
+      }
+
+    }
+  </script>
+</body>
+</html>
+
+

@@ -1,0 +1,69 @@
+<!--Date Started: Dec 5, 2024-->
+<!--Date Finished: Dec 11, 2024-->
+<!--Programmer: Kent Dominic Talamo-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact-style.css">
+    <title>Contact Us</title>
+    <body>
+
+        <section class="contact-section">
+            <div class="contact-header">
+                <button2 onclick="history.back()">Go Back</button2>
+                <h1>Contact Us</h1>
+                <p>If you have any questions or inquiries, feel free to reach out to us!</p>
+            </div>
+    
+            <form>
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Your message here" required></textarea>
+                </div>
+
+<button onclick="myFunction()">Send Message</button>
+
+<script>
+function myFunction() {
+  alert("Thank You! Message has been sent ... Wait for the response, Please Keep your email online.");
+}
+</script>
+            </form>
+    
+            <div class="contact-info">
+                <div>
+                    <h3>Our Location</h3>
+                    <p>Philippines, Cebu, Mandaue City.</p>
+                </div>
+    
+                <div>
+                    <h3>Contact Number</h3>
+                    <p>(0919) 234-5678</p>
+                </div>
+    
+                <div>
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61570060245565">🔗 Facebook</a>
+                        <a href="https://x.com/MonkeyDFoody">🔗 Twitter</a>
+                        <a href="https://www.instagram.com/monkeydfoody111/">🔗 Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </body>
+    </html>

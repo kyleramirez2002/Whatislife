@@ -1,0 +1,57 @@
+<!--Date Started: Dec 10, 2024-->
+<!--Date Finished: Dec 11, 2024-->
+<!--Programmer: Kyle Matthew Ramirez-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Book</title>
+    <link rel="stylesheet" href="booking-styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="signup-box">
+      <div class="login-header">
+        <header>Book An Appointment</header>
+        <p>It's free and only takes a minute</p>
+      </div>
+      <form>
+        <label for="first-name">First Name</label>
+        <div class="input-box">
+          <input type="text" id="first-name" class="input-field" placeholder="First Name" required />
+        </div>
+
+        <label for="last-name">Last Name</label>
+        <div class="input-box">
+          <input type="text" id="last-name" class="input-field" placeholder="Last Name" required />
+        </div>
+
+        <label for="email">Email</label>
+        <div class="input-box">
+          <input type="email" id="email" class="input-field" placeholder="Email" required />
+        </div>
+
+        <label for="password">Date</label>
+        <div class="input-box">
+          <input type="date" id="date" class="input-field" placeholder="Password" required />
+        </div>
+
+        <br><br>
+        <div class="form-group">
+        <label for="message">Message</label>
+        <div class="input-box">
+            <textarea id="message" placeholder="Your message here" class="textarea" required></textarea>
+        </div>
+    </div>
+
+        <div class="input-submit">
+          <input type="button" class="submit-btn" onclick="alert('Booked Successfully')" value="Book" />
+        </div>
+      </form>
+      <br>
+
+    </div>
+  </body>
+</html>

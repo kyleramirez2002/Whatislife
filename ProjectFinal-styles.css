@@ -1,0 +1,276 @@
+/*<!--Date Started: Nov 29, 2024-->
+<!--Date Finished: Dec 11, 2024-->
+<!--Programmer: Kent Dominic Talamo Kyle Matthew Ramirez Clifford Miao-->*/
+
+    /* General Reset and Body */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(45deg, #e8e6c6, #ddecca);
+      color: #333;
+    }
+
+    /* Navigation Styles */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-brand img {
+      width: 50px;
+      margin-right: 10px;
+    }
+
+    .navbar-brand .brand-name {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+
+    .nav-links li {
+      margin: 0 15px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: #f5a623;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f5a623;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      background-color: #fafafa;
+      padding: 80px 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .hero-image {
+      width: 80%;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+
+    /* Search Bar */
+    .search-bar {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .search-bar input {
+      width: 300px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 2px solid #333;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+
+    .search-bar input:focus {
+      border-color: #f5a623;
+      outline: none;
+    }
+
+    .search-bar button {
+      padding: 10px 15px;
+      margin-left: 10px;
+      background-color: #f5a623;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .search-bar button:hover {
+      background-color: #e5941a;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      margin: 30px 0;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* Menu Styles */
+    .menu {
+      background-color: #fff;
+      padding: 60px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .menu-item {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-item img {
+      width: 100%;
+      border-radius: 8px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .menu-item h3 {
+      font-size: 22px;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    .menu-item p {
+      color: #777;
+      margin-top: 10px;
+    }
+
+    .menu-item .price {
+      font-size: 18px;
+      color: #f5a623;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .menu-item .order-btn, .menu-item .cart-btn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #f5a623;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .menu-item .order-btn:hover, .menu-item .cart-btn:hover {
+      background-color: #e5941a;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color:#ddecca;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer p {
+      font-size: 14px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        margin-top: 20px;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+    }
+ 
